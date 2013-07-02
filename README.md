@@ -1,4 +1,4 @@
 Exercises
 =========
 
-To help with programming interview questions (C++)
+To help with programming interview questions (Java)
