@@ -1,21 +1,21 @@
-public class LinkedListNode<E> {
+public class LinkedListNode {
 
-    E data;
-    LinkedListNode<E> next;
+    Object data;
+    LinkedListNode next;
         
-    public LinkedListNode(E data) {
+    public LinkedListNode(Object data) {
 
         this.data = data;
 
     }
 
-    public E getData() {
+    public Object getData() {
 
         return data;
 
     }
 
-    public void setData(E data) {
+    public void setData(Object data) {
 
         this.data = data;
 
