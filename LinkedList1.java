@@ -21,6 +21,8 @@ public class LinkedList1 {
         LinkedListNode.printList(head);
 
         removeDup(head);
+    
+        removeDupNoBuffer(head);
 
     }
 
@@ -49,6 +51,37 @@ public class LinkedList1 {
         }
         
         LinkedListNode.printList(head);       
+
+    }
+
+    public static void removeDupNoBuffer(LinkedListNode node) {
+
+        LinkedListNode head = node;
+        LinkedListNode curr = node;
+
+        while(curr != null) {
+
+            LinkedListNode check = curr;
+
+            while(check.next != null) {
+
+                if(curr.data == check.next.data) {
+
+                    check.next = check.next.next;
+
+                } else {
+
+                    check = check.next;
+
+                }
+
+            }
+
+            curr = curr.next;
+
+        }
+
+        LinkedListNode.printList(head);
 
     }
 
