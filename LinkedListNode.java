@@ -1,21 +1,9 @@
 public class LinkedListNode {
 
-    Object data;
-    LinkedListNode next;
+    public Object data;
+    public LinkedListNode next;
         
     public LinkedListNode(Object data) {
-
-        this.data = data;
-
-    }
-
-    public Object getData() {
-
-        return data;
-
-    }
-
-    public void setData(Object data) {
 
         this.data = data;
 
@@ -25,10 +13,17 @@ public class LinkedListNode {
 
         while(node != null) {
 
-            System.out.println(node.data);
+            System.out.print(node.data);
+            if(node.next != null) {
+
+                System.out.print(" --> ");
+
+            }
             node = node.next;
 
         }
+
+        System.out.println();
 
     }
     
